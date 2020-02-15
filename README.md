@@ -1,7 +1,7 @@
 # MyTravellingApp
 Onboarding Walkthrough Screen UI Design Android Studio
 
-🎬 Part 1 ► https://youtu.be/V23hiiEfVlU
+🎬 Part 1 ► https://youtu.be/V23hiiEfVlU  
 🎬 Part 2 ► https://youtu.be/4AI_QnoP1W4
 
 ## Check out this video
