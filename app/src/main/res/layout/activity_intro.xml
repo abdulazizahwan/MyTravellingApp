@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IntroActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/screen_viewpager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tab_indicator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_indicator"
+        android:layout_width="64dp"
+        android:layout_height="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linear_layout_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabBackground="@drawable/indicator_selector"
+        app:tabIndicatorHeight="0dp">
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_next"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        android:elevation="12dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/ibm_semibold"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        android:elevation="12dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/btn_get_started"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/rounded"
+            android:fontFamily="@font/ibm_semibold"
+            android:text="Get Started"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
